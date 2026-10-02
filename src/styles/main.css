@@ -63,25 +63,12 @@ a {
   min-height: 44px;
 }
 
-.brand-mark {
-  display: grid;
-  grid-template-columns: repeat(2, 7px);
-  grid-template-rows: repeat(2, 7px);
-  gap: 3px;
-  width: 24px;
-  height: 24px;
-  transform: rotate(-8deg);
-}
-
-.brand-mark span {
+.brand-logo {
   display: block;
-  border-radius: 2px;
-  background: #08c9e2;
-}
-
-.brand-mark span:nth-child(2),
-.brand-mark span:nth-child(3) {
-  background: #47e2ed;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  object-fit: contain;
 }
 
 .brand-name {
@@ -517,6 +504,28 @@ a {
   font-weight: 800;
 }
 
+.service-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: auto 0 14px;
+  padding-top: 16px;
+  border-top: 1px solid #edf2f8;
+}
+
+.service-price span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.service-price strong {
+  color: var(--ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+}
+
 .service-card > p {
   min-height: 52px;
   margin: 0;
@@ -525,10 +534,19 @@ a {
   line-height: 1.65;
 }
 
+.service-includes-label {
+  display: block;
+  margin-top: 18px;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .service-card ul {
   display: grid;
   gap: 10px;
-  margin: 22px 0 25px;
+  margin: 22px 0 0;
   padding: 0;
   color: #46566e;
   font-size: 12px;
@@ -569,9 +587,7 @@ a {
   justify-content: space-between;
   gap: 9px;
   width: 100%;
-  margin-top: auto;
-  padding-top: 16px;
-  border-top: 1px solid #edf2f8;
+  margin-top: 0;
   color: var(--blue);
   font-size: 13px;
   font-weight: 700;
@@ -924,6 +940,14 @@ a {
     line-height: 1.6;
   }
 }
+  .services-price-note {
+    margin: 24px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.65;
+    text-align: center;
+  }
+
 
 .contact-cta {
   display: flex;
